@@ -2,6 +2,10 @@
 
 基于leaflet.js实现的矢量、标量数据可视化Demo
 
+## Demo 视频
+
+[Leaflet动态显示--风场、海浪、洋流、气压、温度等矢量、标量数据](https://v.youku.com/v_show/id_XNDg0OTMzNzUxNg==.html)
+
 ## 依赖安装
 ```
 npm install
