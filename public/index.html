@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!--<title><%= htmlWebpackPlugin.options.title %></title>-->
+    <title>气象数据可视化</title>
+    <link rel="icon" href="/logo/TB.png" type="image/x-icon"/>
+    <!--  leaflet -->
+    <link href="/css/leaflet.css" rel="stylesheet">
+    <link href="/css/MarkerCluster.css" rel="stylesheet">
+    <script src="/js/leaflet.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/underscore.js/1.9.1/underscore-min.js"></script>
+    <script src="https://cdn.bootcss.com/backbone.js/1.4.0/backbone-min.js"></script>
+    <script src="https://cdn.bootcss.com/topojson/3.0.2/topojson.min.js"></script>
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <!-- leaflet plugins -->
+
+  <link rel="stylesheet" href="/css/leaflet-vector-scalar.css"> <!-- 矢量风场 + 强度 -->
+  <script type="text/javascript" src="/js/leaflet-vector-scalar.js"></script> <!-- 矢量风场 + 强度 -->
+  <script type="text/javascript" src="/js/leaflet.latlng-graticule.js"></script> <!-- 经纬网络 -->
+  <script type="text/javascript" src="/js/chinaProvider.js"></script><!--  加载多底图-->
+  <script type="text/javascript" src="/js/turf.min.js"></script>  <!-- 空间计算库 -->
+  <script type="text/javascript" src="/js/leaflet-typhoon.min.js"></script>
+  <script type="text/javascript" src="/js/leaflet.markercluster-src.js"></script> <!-- marker聚合 -->
+  <script type="text/javascript" src="/js/geojson.js"></script> <!-- 地图geo遮罩 -->
+
+</html>
