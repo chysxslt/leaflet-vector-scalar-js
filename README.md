@@ -1,13 +1,29 @@
-# wind-demo
+# leaflet-vector-scalar-js
 
-## Project setup
+基于leaflet.js实现的矢量、标量数据可视化Demo
+
+## 依赖安装
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 本地开发调试
 ```
 npm run serve
 ```
+### 参考项目
+
++ [leaflet-velocity](https://github.com/danwild/leaflet-velocity)
+
++ [earth](https://github.com/cambecc/earth)
+
+### Demo核心
+
+leaflet-vector-scalar.js 是Demo的核心文件。是基于leaflet-velocity（矢量部分） 同时参考 earth（标量部分） 项目来完成的。
+代码还不是很完善，近期可能没有太多时间去修改。
+
+### License
+MIT License (MIT)
+
 
 
