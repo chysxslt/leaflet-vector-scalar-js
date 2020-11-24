@@ -1,6 +1,7 @@
 # leaflet-vector-scalar-js
 
-基于leaflet.js实现的矢量、标量数据可视化Demo
+基于leaflet.js实现的矢量、标量数据可视化Demo。
+包含风场、海浪、洋流、气压、温度等矢量或标量气象数据的可视化展示。
 
 ## Demo 视频
 
