@@ -1,7 +1,12 @@
 {
   "name": "wind-demo",
   "version": "0.1.0",
-  "private": true,
+  "author": "chysxslt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chysxslt/leaflet-vector-scalar-js.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

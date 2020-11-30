@@ -4,7 +4,6 @@ import seaCurrentData  from "./seaCurrentData"
 import seaWaveData from "./sea-wave"
 import salinityData from "./salinit"
 import pressureData from "./pressure"
-import deviceData from "./deviceData"
 import temperatureData from "./temperature"
 
 export default {
@@ -15,5 +14,4 @@ export default {
   salinityData: salinityData,
   pressureData: pressureData,
   temperatureData: temperatureData,
-  DEVICE_FLAG: deviceData
 }

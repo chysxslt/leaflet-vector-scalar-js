@@ -38,12 +38,6 @@ module.exports = {
     host:'localhost',
     port:'8088',
     disableHostCheck: true,
-    proxy: {
-      '/':{
-        target:'http://api.dev.ops.com:7000/typhoon',
-        changeOrigin:true,
-      },
-    }
   },
   lintOnSave: process.env.NODE_ENV !== 'production',
   productionSourceMap:true, // 生产环境是否需要sourceMap
