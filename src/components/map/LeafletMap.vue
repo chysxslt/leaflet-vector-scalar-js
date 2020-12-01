@@ -314,16 +314,16 @@
 </template>
 
 <script>
-  import { LMap, LTileLayer, LMarker, LPopup, LCircle, LLayerGroup,LIcon,LPolyline } from "vue2-leaflet";
+  import { LMap, LMarker, LPopup, LCircle, LLayerGroup,LIcon } from "vue2-leaflet";
   // import { latLng, icon } from "leaflet"
-  import { mapState,mapActions,mapMutations,mapGetters } from 'vuex'
+  import { mapState } from 'vuex'
   import HeatmapOverlay from 'heatmap.js/plugins/leaflet-heatmap'
   import html2canvas from 'html2canvas'
   import { latlngChangeToDMS,DMSChangetoLatlng } from '../../utils/util'
   import { seaRiskBigData as seaRiskBigDataApi } from '@/http/riskEstimate'
-  import { isMobile,checkNavtiveClass } from "../../utils/util"
+  import { isMobile } from "../../utils/util"
   import moment from 'moment'
-  import {testHeatmapData,testPortData,testDeviceData,testPipeLineData} from "../../mock/testData"
+  import {testHeatmapData} from "../../mock/testData"
   import http from '@/http/index'
   import portIcon from '../../assets/map/港口码头.png'
   import deviceIcon from '../../assets/map/设备库.png'
@@ -340,7 +340,6 @@
   import arrowRed from '../../assets/arrowRed.png'
   import chuanLightLogo from '../../assets/chuanLight.png'
 
-  import {worldJson} from "../../mock/world";
   import { getDetailById } from '@/http/ship'
 
   export default {
@@ -349,7 +348,7 @@
 
     },
     components: {
-      LMap, LTileLayer, LMarker, LPopup, LCircle, LLayerGroup, LPolyline
+      LMap, LMarker, LPopup, LCircle, LLayerGroup
     },
     computed:{
       ...mapState('moduleMap',{
